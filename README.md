@@ -64,13 +64,42 @@ chmod +x ping-analyzer.sh
 ## 📸 Example Output
 
 ```text
-==============================
-      PING ANALYZER TOOL
-==============================
+=========================================
+           PING ANALYZER TOOL
+=========================================
 
-Enter Website/IP: google.com
+Enter Website or IP Address: google.com
 
-✅ google.com is Reachable
+Checking connectivity...
+
+Status : REACHABLE
+Host   : google.com
+Time   : 15-06-2026 21:15:30
+
+Log saved in ping_log.txt
+=========================================
+```
+
+---
+
+## 📄 Log File
+
+The script automatically creates a `ping_log.txt` file and stores the results of each connectivity check.
+
+### Example Log
+
+```text
+google.com | REACHABLE | 15-06-2026 21:15:30
+youtube.com | REACHABLE | 15-06-2026 21:17:05
+abcxyz123.com | NOT REACHABLE | 15-06-2026 21:18:44
+```
+
+You can view the logs anytime using:
+
+```bash
+cat ping_log.txt
+```
+
 ```
 
 ---
